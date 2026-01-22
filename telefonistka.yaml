@@ -9,14 +9,14 @@ promotionPaths:
     promotionPrs:
       - targetDescription: "Development Environment"
         targetPaths:
-          - "clusters/dev"
+          - "clusters/dev/"
 
   # Second promotion: dev → staging
   - sourcePath: "clusters/dev/[^/]*/[^/]*
     promotionPrs:
       - targetDescription: "Staging Environment"
         targetPaths:
-          - "clusters/staging"
+          - "clusters/staging/"
 
 # Enable dry run mode to see what would happen without creating actual PRs
 # Set to false when you're ready to test real promotions
