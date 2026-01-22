@@ -15,6 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Telefonistka
-        uses: wayfair-incubator/telefonistka-action@v1
+        uses: Oded-B/telefonistka-action@main
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GH_TOKEN }}
