@@ -9,7 +9,7 @@ promotionPaths:
     promotionPrs:
       - targetDescription: "Development Environment"
         targetPaths:
-          - "clusters/dev/"
+          - clusters/dev/       # ← With trailing slash
 
   # Second promotion: dev → staging
   - sourcePath: "clusters/dev/[^/]*"
