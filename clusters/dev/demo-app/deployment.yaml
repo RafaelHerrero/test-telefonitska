@@ -4,7 +4,6 @@ metadata:
   name: demo-app
   labels:
     app: demo-app
-    environment: dev
 spec:
   replicas: 2
   selector:
@@ -14,7 +13,6 @@ spec:
     metadata:
       labels:
         app: demo-app
-        environment: dev
     spec:
       containers:
       - name: nginx
