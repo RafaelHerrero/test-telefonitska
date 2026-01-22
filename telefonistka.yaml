@@ -12,7 +12,7 @@ promotionPaths:
           - "clusters/dev/"
 
   # Second promotion: dev → staging
-  - sourcePath: "clusters/dev/[^/]*/[^/]*"
+  - sourcePath: "clusters/dev/[^/]*"
     promotionPrs:
       - targetDescription: "Staging Environment"
         targetPaths:
