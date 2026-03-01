@@ -13,8 +13,12 @@ on:
 jobs:
   telefonistka:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/rafaelherrero/telefonistka:test
     steps:
       - name: Run Telefonistka
-        uses: Oded-B/telefonistka-action@main
-        with:
-          repo-token: ${{ secrets.GH_TOKEN }}
+        run: telefonistka event
+        env:
+          GITHUB_OAUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+          APPROVER_GITHUB_OAUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+          TEMPLATES_PATH: "/srv/templates/"
