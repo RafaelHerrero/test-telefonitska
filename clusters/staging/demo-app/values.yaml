@@ -8,7 +8,7 @@ image:
   tag: 1.21.0
   pullPolicy: IfNotPresent
 
-replicaCount: 8
+replicaCount: 6
 
 resources:
   requests:
