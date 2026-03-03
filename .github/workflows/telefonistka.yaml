@@ -8,13 +8,13 @@ on:
       - closed
       - opened
       - synchronize
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   telefonistka:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/rafaelherrero/telefonistka:test
+      image: ghcr.io/rafaelherrero/telefonistka:test-refac
     steps:
       - name: Run Telefonistka
         run: telefonistka event
