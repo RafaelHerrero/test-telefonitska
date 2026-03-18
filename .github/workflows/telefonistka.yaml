@@ -14,7 +14,7 @@ jobs:
   telefonistka:
     runs-on: ubuntu-latest
     container:
-      image: docker.io/schubergphilis/container-platform-telefonistka:latest
+      image: ghcr.io/rafaelherrero/telefonistka:test-refac
     steps:
       - name: Run Telefonistka
         run: telefonistka event
