@@ -14,7 +14,7 @@ jobs:
   telefonistka:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/rafaelherrero/telefonistka:test-refac-3
+      image: ghcr.io/rafaelherrero/telefonistka:test-refac-4
     steps:
       - name: Run Telefonistka
         run: telefonistka event
