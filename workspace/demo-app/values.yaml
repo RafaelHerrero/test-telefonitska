@@ -5,10 +5,10 @@ app:
 
 image:
   repository: nginx
-  tag: 1.27.9
+  tag: 1.27.1
   pullPolicy: IfNotPresent
 
-replicaCount: 9
+replicaCount: 1
 
 resources:
   requests:
